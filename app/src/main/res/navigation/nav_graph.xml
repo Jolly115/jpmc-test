@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.app.a20230125_jollygupta_nycschools.ui.splash.SplashFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.a20230125_jollygupta_nycschools.ui.home.HomeFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.app.a20230125_jollygupta_nycschools.ui.detail.DetailFragment"
+        android:label="fragment_detail_screen"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="data"
+            app:nullable="true"
+            app:argType="string" />
+    </fragment>
+
+    <action android:id="@+id/action_to_homeFragment" app:destination="@id/homeFragment"/>
+    <action android:id="@+id/action_to_detailFragment" app:destination="@id/detailFragment"/>
+
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvSchoolName"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tvParagraph"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            app:drawableStartCompat="@drawable/ic_phone" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
